@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Javascript</title>
+</head>
+<body>
+    <h1>Ejercicios Javascript</h1>
+
+    <!-- EJERCICIO 1: INTRODUCIR NOMBRE APELLIDO Y EDAD PARA QUE MAQUINA HAGA CADENA
+    <p>ejer 1</p>
+    <p id="ejer1"></p>
+    <script>
+        let nombre = prompt("Pon Nombre");
+        let apellido = prompt("Pon Apellido");
+        let edad = prompt("Pon edad");
+        document.getElementById("ejer1").innerHTML = `Hola te llamas ${nombre} ${apellido} y tienes ${edad}`;
+    </script>-->
+
+    <!-- EJERCICIO 2: INDICAR FIGURA Y PARÁMETROS NECESARIOS PARA CALCULAR ÁREA
+    <p id="ejer2"></p>
+    <script>
+        let figura = prompt("De qué figura quieres saber el área?");
+        if(figura=="triángulo"){
+            let base = prompt("Introduzca tamaño de base");
+            let altura = prompt("Introduzca tamñao de altura");
+            let resultado = base * (altura/2);
+            document.getElementById("ejer2").innerHTML = `Hola, el área de ${figura} es ${resultado}`;
+        } else if (figura=="rectángulo") {
+            let base = prompt("Introduzca tamaño de base");
+            let altura = prompt("Introduzca tamñao de altura");
+            let resultado = base * altura;
+            document.getElementById("ejer2").innerHTML = `Hola, el área de ${figura} es ${resultado}`;
+        } else if(figura=="círculo"){
+            let radio = prompt("Introduzca tamaño de radio");
+            let resultado = Math.PI* (radio^2);
+            document.getElementById("ejer2").innerHTML = `Hola, el área de ${figura} es ${resultado}`;
+         } else {
+            document.getElementById("ejer2").innerHTML = `Esa figura no está incluida`;
+         }
+    </script>-->
+
+<!-- EJERCICIO 3: INTRODUCIR NUMERO E IMPRIMIR SEÑALANDO SI PARES O IMPARES HASTA ESE NUMERO
+    <p id="ejer3"></p>
+    <script>
+        let numero= prompt("Introduzca un Número");
+
+    </script>-->
+
+    <p id="ejer4"></p>
+    <script>
+        /*
+        let numero = prompt("Introduzca número entero");
+        for(let i=1; i<=numero; i++){
+            console.log(i);
+            if(numero%i==0 && i!=numero){console.log(`el numero es ${numero}, su anterior es ${i} y NO es primo`);}
+            else if (numero%i ==0 && i==numero){console.log(`el numero es ${numero}, su anterior es ${i} y SÍ es primo`);}
+        } */
+
+        /*let i;
+        while(numero % i != 0){ 
+            i++;
+            numero%i;
+            if (numero % i == 0 && i != numero){
+                break;
+                console.log(`el numero es ${numero}, su anterior es ${i} y NO es primo`);
+            } else{
+                break;
+                console.log(`el numero es ${numero}, su anterior es ${i} y SÍ es primo`);
+            }
+            console.log(numero);
+        }
+        console.log(`el numero es ${numero}, su anterior es ${i} y meeeeeee`); */
+        
+        
+        //(numero%2==0) ? document.getElementById("ejer2").innerHTML = `Esa figura no está incluida`;
+    </script>
+    <p id="ejer5"></p>
+    <script>
+        let numero = prompt("Introduce un numero");
+        let resultado;
+        for(let i = numero; i> 0; i--){
+          resultado =  numero * i;
+        }
+        document.getElementById("ejer5").innerHTML= `${resultado}`;
+    </script>
+    <p id="ejer6"></p>
+    <p id="ejer7"></p>
+    <p id="ejer8"></p>
+    <p id="ejer9"></p>
+    <p id="ejer10"></p>
+</body>
+</html>

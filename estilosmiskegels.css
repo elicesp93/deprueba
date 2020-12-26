@@ -1,0 +1,389 @@
+:root{
+    --color-primario: #FBFAF9;
+    --color-secundario: #37384B;
+    --blanco: white;
+    --negro: #191A19;
+    --naranjita: #E39C74
+  }
+* { box-sizing: border-box;}
+
+body{
+font-family:"Open Sans",sans-serif;
+font-weight: 300;
+margin: 0;
+background-color: var(--color-primario);
+color: var(--color-secundario);
+counter-reset: micontador;
+font-size: 17px;
+}
+footer{
+    font-size: 14px;
+}
+/* Estilos Generales */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Piazzolla', serif;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px; 
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-secundario);
+}
+hr{
+    color: var(--naranjita);
+}
+ul{
+    list-style-type:none;
+}
+li{
+    list-style-type:none;
+}
+ nav{
+     width: 100%;
+     height: 15vh;
+     padding: 0 8vw;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     color: var(--color-secundario);
+     font-size: 14px;
+     font-weight: bold;
+     background-color: var(--color-primario);
+     /*box-shadow: 0 0 5px rgba(0, 0, 0, .1);*/
+     z-index: 2000;  
+ }
+ nav a{
+    display: flex;
+ }
+ nav a:hover{
+     transform: scale(80%);
+ }
+ .logo-header{
+    height: 60px;
+    
+}
+ /* Efectos de Esconder y Mostrar*/
+ .hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+ /* Estilos Pagina Incio y Home */
+.contenedor--caroussel--home{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+.contenedor--texto--caroussel--home{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor--texto--caroussel--home h1{
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+.contenedor--texto--caroussel--home p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+.contenedor--texto--caroussel--home .boton--primario{
+    margin-bottom: 120px;
+}
+.texto--caroussel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 3vw;
+    margin-top: 20vh;
+}
+.contenedor--imagen--caroussel--home{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor--informacion--home{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 600px;
+    background-color: #E2E9E6;
+}
+.footer--home{
+    width: 100%;
+    height: 100px;
+    background-color: var(--negro);
+    color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+.footer--home a{
+    color: var(--color-primario);
+}
+.tarjetero--home{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.tarjeta--beneficios--cirugia, .tarjeta--beneficios--preparto, .tarjeta--beneficios--ereccion{
+    width: 250px;
+    height: 250px;
+    background-position: top right;
+    transition: 2s background-position cubic-bezier(.22,.61,.36,1);
+    max-height: 300px;
+    border-radius: 20px;
+   
+    background-size: cover;
+    margin: 0 5vw;
+}
+.tarjeta--beneficios--preparto{
+    background-image: url(recursos/preparto.png);
+}
+.tarjeta--beneficios--cirugia{
+    background-image: url(recursos/cirugia.png);
+}
+.tarjeta--beneficios--ereccion{
+    background-image: url(recursos/erecciones.png);
+}
+/* Estilo Botones */
+.boton{
+    display: inline-block;
+    line-height: 3em;
+    height: 3em;
+    padding: 0 3em;
+    border-radius: 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: .2em;
+    color: var(--color-primario);
+}
+.bprimario{
+    background-color: var(--color-secundario);
+}
+.bsecundario{
+    border: 5px solid var(--color-secundario);
+    color: var(--color-secundario);
+    line-height: 2.6em;
+}
+#binicio, #bpausa, #breset{
+    width: 50px;
+    height: 50px;
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    font-size: 36px;
+    
+}
+/* Estilos Panel Ejercicios */
+.contenedor--panelejercicios{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.tarjeta--ejercicio{
+    width: 200px;
+    height: 200px;
+    margin: 0 5vw;
+    /*background-color: var(--color-secundario);*/
+    border-radius: 10%;
+    box-shadow: 0px 0px 20px rgb(128, 119, 119);
+    background-image: url(recursos/ejercicio1.jpg);
+    background-size: cover;
+}
+/* Estilos Página Ejercicio */
+.contenedor--pagina--ejercicio{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.contenedor--ejercicio{
+    margin-top: 8vh;
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.contador{
+ /*margin: 10px auto;*/
+ text-align: center;
+ font-size: 5em;
+ font-weight: 600;
+ color: var(--color-secundario);
+}
+.contador span{
+    font-family: 'Piazzolla', serif;
+    font-size: 36px;
+}
+.animacion--pagina--ejercicio{
+width: 300px;
+height: 300px;
+}
+
+.panel--pagina--ejercicio {
+	width: 50%;
+	/* background: #72aadb; */
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 300px;
+}
+.controles--pagina--ejercicio{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1em 0;
+}
+/* Estilos página FAQS*/
+.contenedor--principal--faqs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 12vh;
+}
+.contenedor--principal--faqs ol{
+    width: 60%;
+    font-weight: 400;
+    min-width: 300px;
+    margin-bottom: 3em;
+}
+.contenedor--principal--faqs ol li{
+    padding: 0 2em;
+    margin-top: 0; 
+}
+.contenedor--principal--faqs ul{
+    padding-left: 20px;
+}
+.contenedor--principal--faqs ul li{
+    list-style-type: circle;
+    padding: 0;   
+}
+
+ol h2{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+ol h2::before {
+	counter-increment: micontador;
+	content: counter(micontador);
+	display: flex;
+	width: 3rem;
+	height: 3rem;
+	background-color: var(--naranjita);
+	border-radius: 1rem 1rem 0 1rem;
+	position: relative;
+	box-sizing: border-box;
+	font-size: 30px;
+	font-weight: 900;
+	top: 30px;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	right: 4rem;
+}
+
+.centrandoul{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjeta--faqs li{
+    margin-top: 1em;
+    font-weight: 400;
+}
+.contenedor--principal--faqs ol p{
+    padding-right: 1em;
+    text-align: justify;
+}
+/* estilos acordeon */
+.panel{
+    display: none;
+    margin-top: 70px;
+}
+.accordion{
+    margin-top: -5em;
+    margin-left: 50vw;
+    margin-bottom: 3em;
+}
+.accordion:hover{
+    cursor: pointer;
+}
+.accordion::after {
+	content: '\002B';
+	color: var(--naranjita);
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5px;
+    position: relative;
+    top: 30px;
+}
+.accordion.active::after {
+    content: "\2212";
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    nav{
+        width: 100vw;
+    }
+    .contenedor--caroussel--home{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contenedor--texto--caroussel--home h1{
+        font-size: 20px;
+    }
+    .contenedor--informacion--home{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .tarjetero--home{
+        flex-wrap: wrap;
+    }
+    .footer--home{
+        width: 100%;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .contenedor--panelejercicios{
+        height: 900px;
+    }
+    .contenedor--ejercicio{
+        margin-top: 20vh;
+    }
+    .contador{
+        font-size: 2em;
+    }
+}

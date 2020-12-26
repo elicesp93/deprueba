@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="estilosmiskegels.css">
+    <script src="cronometro.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html"> <img src="recursos/logo_miskegel.svg" alt="logo miskegels" aria-label="pagina inicio miskegel" class="logo-header"></a>
+            <h1>Contrae / Relaja</h1>
+            <a href="#"> <img src="recursos/icono_menu.svg" alt="menu de miskgel" style="height: 30px;"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor--pagina--ejercicio">
+            <div class="contenedor--ejercicio">
+                <div id="florAnimada" class="animacion--pagina--ejercicio hidden"></div>
+                <div class="panel--pagina--ejercicio">
+                    <div id="pantalla" class="contador">Empezar<br>00:00</div>
+                    <div class="controles--pagina--ejercicio">
+                        <div><button id="binicio" onclick="start()">&#x23F5</button></div>
+                        <div><button id="bpausa" onclick="stop()">&#x23F8</button></div>
+                        <div><button id="breset" onclick="reset()">&#8634</button></div>
+                    </div>
+                    
+                </div>
+                
+                <div style="margin: 3em 40%;"><a href="panelejerciciosgeneral.html" class="boton bsecundario"> SALIR</a></div>
+            </div>   
+        </div>
+    </main>
+    
+  
+</body>
+</html>
